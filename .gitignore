@@ -111,6 +111,7 @@ arbalet/frontage/celerybeat.pid
 ./src/data.xlsx
 node_modules/
 package-lock.json
+web/yarn.lock
 src/activity.log.1
 src/data.xlsx
 backend/src/activity.log.1
