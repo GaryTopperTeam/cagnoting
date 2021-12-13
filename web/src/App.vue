@@ -1,7 +1,7 @@
 <template lang="pug">
   main#app
     .core
-      button.big-fuking-button(type="button" @click="faitT") faitT !!!!!
+      button.btn.btn-primary.big-fuking-button(type="button" @click="faitT") faitT !!!!!
     .cagnotte La cagnotte est de {{cagnotte}} moula
 
 </template>
