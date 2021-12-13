@@ -21,6 +21,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "haml-plain-loader": "^1.0.0",
     "pug-plain-loader": "^1.1.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^10",
     "vue-cli-plugin-axios": "~0.0.4",
     "vue-cli-plugin-pug": "~2.0.0",
     "vue-template-compiler": "^2.6.11"

@@ -23,6 +23,7 @@ export default {
   methods: {
     faitT () {
       server.addCagnoting(1).then((result) => {
+        console.log(result)
         this.cagnotte += 1
       })
     }
@@ -30,12 +31,15 @@ export default {
   mounted () {
     server.getCagnoting().then((result) => {
       this.cagnotte = result.sum
+      console.log(result)
     })
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import './assets/stylesheets/main.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
