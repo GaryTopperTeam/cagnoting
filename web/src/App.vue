@@ -1,8 +1,10 @@
 <template lang="pug">
-  main#app
-    .core
-      button.btn.btn-primary.big-fuking-button(type="button" @click="faitT") faitT !!!!!
-    .cagnotte La cagnotte est de {{cagnotte}} moula
+  main#app.h-100
+    .d-flex.flex-column.justify-content-center.container-fluid.h-100
+      .row.align-items-center.text-center
+        .col
+          button.btn.btn-primary.big-fuking-button(type="button" @click="faitT") faitT !!!!!
+          p La cagnotte est de {{cagnotte}} moula
 
 </template>
 
@@ -38,23 +40,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/stylesheets/main.scss';
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ebedef;
-  margin-top: 60px;
-}
-body {
-  background: #282923;
-  color: #ebedef;
-}
-.big-fuking-button {
-  width: 25%;
-  height: 20vh;
-  margin: auto;
-}
+  /* No CSS here, just import please =) */
+  @import './assets/stylesheets/main.scss';
 </style>

@@ -1,1 +1,19 @@
+/* ITCSS coming soon! */
+
 @import "bootstrap";
+
+:root,
+body {
+  height: 100%;
+}
+
+body {
+  background: #282923;
+  color: #ebedef;
+}
+
+.big-fuking-button {
+  width: 25%;
+  height: 20vh;
+  margin: auto;
+}
