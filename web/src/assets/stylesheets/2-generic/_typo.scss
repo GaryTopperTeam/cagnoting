@@ -1,0 +1,51 @@
+/*
+ * GLOBAL RESPONSIVE FONT
+ */
+html {
+  font-size: 14px;
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    font-size: 16px;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    font-size: 18px;
+  }
+}
+
+// body {
+//   font-size: $line-height-base $font-size-base $font-family-base;
+// }
+/***/
+
+.ff-base {
+  font-family: $font-family-sans-serif;
+}
+
+.ff-headings {
+  font-family: $headings-font-family;
+}
+
+.fs-base {
+  font-size: $font-size-base;
+}
+
+.fs-lg {
+  font-size: $font-size-lg;
+
+  &--rwd {
+    @include media-breakpoint-down(xs) {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+.fs-sm {
+  font-size: $font-size-sm;
+
+  &--rwd {
+    @include media-breakpoint-down(xs) {
+      font-size: $font-size-base;
+    }
+  }
+}

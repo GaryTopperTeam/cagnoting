@@ -3,8 +3,23 @@
     .d-flex.flex-column.justify-content-center.container-fluid.h-100
       .row.align-items-center.text-center
         .col
-          button.btn.btn-primary.big-fuking-button(type="button" @click="faitT") faitT !!!!!
-          p La cagnotte est de {{cagnotte}} moula
+          ul.actions.nav.row.justify-content-center.my-3
+            li.action.col-sm.mb-3
+              button.btn.btn-lg.btn-danger.rounded-pill.d-block.d-sm-inline-block.h-100.w-100.w-sm-auto(type="button" @click="increase")
+                span.fs-2 faiT
+                br
+                small.d-inline-block.lh-sm.mx-3.my-2 y'a pas de -e,
+                  i  jamais
+            li.action.col-sm.mb-3
+              //- TODO(dev): please check if I work too
+              button.btn.btn-lg.btn-warning.rounded-pill.d-block.d-sm-inline-block.h-100.w-100.w-sm-auto(type="button" @click="increase")
+                span.fs-2 :'( con-ne
+                br
+                small.d-inline-block.lh-sm.mx-3.my-2 c'est pas gentil pour les vulves
+          p.fs-lg.fw-bold.text-light.my-3
+            | La cagnotte est de
+            span.text-white  {{cagnotte}}
+            |  moula
 
 </template>
 
@@ -23,7 +38,7 @@ export default {
     }
   },
   methods: {
-    faitT () {
+    increase () {
       server.addCagnoting(1).then((result) => {
         console.log(result)
         this.cagnotte += 1

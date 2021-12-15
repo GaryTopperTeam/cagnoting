@@ -4,6 +4,26 @@ body {
 }
 
 body {
-  background: #282923;
-  color: #ebedef;
+  background: $bg-color;
+  color: $body-color;
+}
+
+.action {
+  max-width: 22rem;
+}
+
+.grid1x1 {
+  padding-top: 100%;
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
 }
