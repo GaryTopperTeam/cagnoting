@@ -1,19 +1,49 @@
-/* ITCSS coming soon! */
+/* GLOBAL STYLESHEETS CALLS
+ * /!\ Imports only: do not write CSS here please!
+ */
 
-@import "bootstrap";
+/*
+ * 1-BASE
+ */
+@import "1-base/variables"; // Bootstrap loaded in there, according to official doc.
+// @import "1-base/macros";
+/***/
 
-:root,
-body {
-  height: 100%;
-}
+/*
+ * 2-GENERIC
+ */
+// @import "2-generic/fonts";
+// @import "2-generic/override";
+// @import "2-generic/typo";
+// @import "2-generic/utilities";
+@import "2-generic/layouts";
+// @import "2-generic/common";
+/***/
 
-body {
-  background: #282923;
-  color: #ebedef;
-}
+/*
+ * 3-OBJECTS
+ */
+@import "3-objects/clickables";
+// @import "3-objects/images";
+// @import "3-objects/fields";
+// @import "3-objects/icons";
+// @import "3-objects/sprites";
+/***/
 
-.big-fuking-button {
-  width: 25%;
-  height: 20vh;
-  margin: auto;
-}
+/*
+ * 4-COMPONENTS
+ */
+// @import "4-components/header";
+// @import "4-components/cards";
+// @import "4-components/carousels";
+// @import "4-components/filters";
+// @import "4-components/forms";
+// @import "4-components/tables";
+
+/***/
+
+/*
+ * 5-PAGES
+ */
+// @import "5-pages/404";
+/***/

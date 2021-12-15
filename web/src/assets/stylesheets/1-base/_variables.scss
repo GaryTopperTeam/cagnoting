@@ -1,0 +1,97 @@
+/*
+ * CUSTOM
+ */
+
+// Colors //
+$grey-light: #eee;
+$grey-dark: #282923;
+///
+
+/* Global selectors */
+$link: '&:link', '&:visited';
+$hover: '&:hover', '&:focus', '&:active';
+/***/
+
+/*
+ * THEMING
+ */
+$enable-negative-margins: true;
+
+$dark: $grey-dark;
+$light: $grey-light;
+// $primary: $blue;
+// $primary--rgb: rgb(33, 91, 160);
+// $primary-outline: rgba($primary--rgb, .3);
+// $primary-outline--hex: #bdd8de;
+// $secondary: $brown;
+
+$bg-color: $grey-dark;
+$body-color: $grey-light;
+$border-color: $grey-light;
+
+$color-contrast-dark: $body-color;
+
+// $custom-colors: (
+//   "tertiary": $tertiary,
+// );
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary,
+//   "success": $green,
+//   "info": $cyan,
+//   "warning": $yellow,
+//   "danger": $red,
+//   "light": $light,
+//   "dark": $dark
+// );
+
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+$breadcrumb-divider: quote(">");
+
+$hr-opacity: 1;
+
+/* Import the necessary Bootstrap files */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$font-size-lg: $font-size-base * 1.15;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='ms-auto svg-inline--fa fa-chevron-down fa-w-14'><path fill='#{$accordion-icon-color}' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'></path></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='ms-auto svg-inline--fa fa-chevron-down fa-w-14'><path fill='#{$accordion-icon-active-color}' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'></path></svg>");
+
+$btn-border-radius-lg: $border-radius;
+$input-border-radius-lg: $border-radius;
+
+$grid-gutter: $grid-gutter-width / 2;
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1360px
+);
+
+$container-max-widths: (
+  xs: 450px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1300px
+);
+
+$custom-file-text: (
+  en: "Browse",
+  es: "Elegir",
+  fr: "Parcourir"
+);
+/***/
+
+/* Finally, import Bootstrap */
+@import "bootstrap";
+/***/

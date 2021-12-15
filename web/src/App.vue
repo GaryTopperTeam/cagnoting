@@ -40,6 +40,6 @@ export default {
 </script>
 
 <style lang="scss">
-  /* No CSS here, just import please =) */
+  /* No CSS here, just global import please =) */
   @import './assets/stylesheets/main.scss';
 </style>
