@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend:
+    image: webdevops/apache:latest
+    volumes:
+      - ./dist/:/app
+    networks:
+      - internal
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`zifendel.com`)"
+      - "traefik.http.routers.whoami.entrypoints=websecure"
+      - "traefik.http.routers.whoami.tls.certresolver=myresolver"
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
