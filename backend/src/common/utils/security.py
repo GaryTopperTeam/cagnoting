@@ -1,11 +1,11 @@
 
-import jwt
+# import jwt
 import logging
 
 from functools import wraps
 from flask import abort, request
 from passlib.hash import pbkdf2_sha256
-from server.extensions import auth
+# from server.extensions import auth
 
 # TOKEN_ALGO = 'RS512'
 TEN_YEARS = 60 * 60 * 24 * 7 * 52 * 10
@@ -17,18 +17,18 @@ LOG = logging.getLogger(__name__)
 
 
 def extract_payload(token):
-    try:
-        payload = jwt.decode(token, auth.public_key(), audience=auth.audience, algorithm=auth.token_algo)
-        return payload
-    except jwt.ExpiredSignatureError as e:
-        LOG.error((str(e) + " ExpiredSignatureError"))
-        raise
-    except jwt.InvalidTokenError as e:
-        LOG.error((str(e) + " InvalidTokenError"))
-        raise
-    except Exception as e:
-        LOG.error((str(e) + " Error"))
-        raise
+    # try:
+    #     payload = jwt.decode(token, auth.public_key(), audience=auth.audience, algorithm=auth.token_algo)
+    #     return payload
+    # except jwt.ExpiredSignatureError as e:
+    #     LOG.error((str(e) + " ExpiredSignatureError"))
+    #     raise
+    # except jwt.InvalidTokenError as e:
+    #     LOG.error((str(e) + " InvalidTokenError"))
+    #     raise
+    # except Exception as e:
+    #     LOG.error((str(e) + " Error"))
+    #     raise
     return False
 
 
