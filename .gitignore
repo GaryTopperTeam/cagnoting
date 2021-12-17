@@ -107,7 +107,7 @@ ENV/
 arbalet/frontage/celerybeat.pid
 #log
 ./src/activity.log.1
-./src/activity.log
+./backend/activity.log
 ./src/data.xlsx
 node_modules/
 package-lock.json
