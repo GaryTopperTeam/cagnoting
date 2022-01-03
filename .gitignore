@@ -122,3 +122,4 @@ backend/src/activity.log
 ./client/esp_mqtt_client/esp-idf/
 
 *.bak 
+*.pyc
