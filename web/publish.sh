@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PUBLISH_FILE=docker-compose.prod.yml
+PUBLISH_FILE=docker-compose.yml
 
 docker-compose -f ${PUBLISH_FILE} build --no-cache
 docker-compose -f ${PUBLISH_FILE} push

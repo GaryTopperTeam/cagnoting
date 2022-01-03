@@ -1,9 +1,8 @@
 version: '3'
 services:
   frontend:
-    image: webdevops/apache:latest
-    volumes:
-      - ./dist/:/app
+    build: .
+    image: registry.zifendel.com/cagnoting/web:${version:-latest}
     networks:
       - internal
       - proxy
