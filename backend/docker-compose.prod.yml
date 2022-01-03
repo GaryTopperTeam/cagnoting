@@ -31,10 +31,10 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.webcagnoting.rule=Host(`cagnoting-be.zifendel.com`)"
-      - "traefik.http.routers.webcagnotingmi.entrypoints=websecure"
+      - "traefik.http.routers.webcagnoting.entrypoints=websecure"
       - "traefik.http.routers.webcagnoting.tls.certresolver=myresolver"
       - "traefik.docker.network=proxy"
-      - "traefik.port=80"
+      - "traefik.http.services.webcagnoting.loadbalancer.server.port=9009"
     networks:
       - internal
       - proxy

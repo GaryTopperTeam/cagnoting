@@ -9,9 +9,11 @@ services:
       - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.whoami.rule=Host(`zifendel.com`)"
+      - "traefik.http.routers.whoami.rule=Host(`cagnoting.zifendel.com`)"
       - "traefik.http.routers.whoami.entrypoints=websecure"
       - "traefik.http.routers.whoami.tls.certresolver=myresolver"
+      - "traefik.docker.network=proxy"
+      - "traefik.port=80"
 networks:
   proxy:
     external: true
