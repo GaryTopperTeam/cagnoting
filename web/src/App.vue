@@ -15,6 +15,12 @@
                 span.fs-2 :'( con-ne
                 br
                 small.d-inline-block.lh-sm.mx-3.my-2 c'est pas gentil pour les vulves
+            li.action.col.mb-3
+              button.btn.btn-lg.btn-danger.rounded-pill.d-block.d-sm-inline-block.h-100.w-100.w-sm-auto(type="button" @click="increase")
+                span.fs-2 unE espèce
+                br
+                small.d-inline-block.lh-sm.mx-3.my-2 un genre, une sorte
+
           p.fs-lg.fw-bold.text-light.my-3
             | La cagnotte est de
             span.text-white  {{cagnotte}}
