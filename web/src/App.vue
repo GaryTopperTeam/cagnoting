@@ -21,7 +21,7 @@
                 br
                 small.d-inline-block.lh-sm.mx-3.my-2 un genre, une sorte
             li.action.col.mb-3
-              button.btn.btn-lg.btn-danger.rounded-pill.d-block.d-sm-inline-block.h-100.w-100.w-sm-auto(type="button" @click="increase")
+              button.btn.btn-lg.btn-warning.rounded-pill.d-block.d-sm-inline-block.h-100.w-100.w-sm-auto(type="button" @click="increase")
                 // FIXME: FUCKING WHITESPACE NEEDED HERE ESLINT SUCKS PLEASE HELP
                 span.fs-2 HUMAIN(s)
                 br
